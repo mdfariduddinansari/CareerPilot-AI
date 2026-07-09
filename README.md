@@ -2,7 +2,7 @@
 
 **Tagline:** _Everything you need to land your dream job — powered by AI._
 
-**Website:** [http://localhost:5173](http://localhost:5173)
+**Website:** (https://careerpilot-ai-one-eta.vercel.app/)
 
 CareerPilot AI is a production-ready v1 AI career operating system with authentication, analytics dashboard, resume/ATS intelligence, interview prep, job tracking, and roadmap generation.
 
