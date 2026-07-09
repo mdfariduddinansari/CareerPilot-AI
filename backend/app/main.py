@@ -39,7 +39,16 @@ async def common_exception_handler(_, exc: Exception):
 @app.on_event('startup')
 def startup_event():
     Base.metadata.create_all(bind=engine)
-
+    
+@app.get("/")
+def root():
+    return {
+        "name": settings.app_name,
+        "status": "online",
+        "docs": "/docs",
+        "health": "/api/v1/health",
+        "version": "1.0.0"
+    }
 
 app.include_router(health.router, prefix='/api/v1')
 app.include_router(auth.router, prefix='/api/v1')
